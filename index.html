@@ -32,18 +32,20 @@
   <header>
     <nav class="bg-light">
       <div class="container-fluid">
-        <div class="row justify-content-between box-shadow ">
-          <div class="col-2"> <i class=" navbar-brand mdi mdi-tortoise fs-1 ps-md-5"></i>
+        <div class="row justify-content-between box-shadow">
+          <div class="col-2">
+            <i class="mdi mdi-tortoise fs-1 ps-md-5"></i>
           </div>
-          <div class="col-10 d-flex align-items-center justify-content-end gap-3 pe-5 ">
-            <div>Home</div>
-            <div>About</div>
-            <div>Services</div>
-            <div>Portfolio</div>
-            <div>Team</div>
-            <div>Pricing</div>
-            <div>Drop Down</div>
-            <div>Contact</div>
+          <div class="col-10 d-flex align-items-center justify-content-end gap-3 pe-md-5 ">
+            <div class="d-none d-md-block">Home</div>
+            <div class="d-none d-md-block">About</div>
+            <div class="d-none d-md-block">Services</div>
+            <div class="d-none d-md-block">Portfolio</div>
+            <div class="d-none d-md-block">Team</div>
+            <div class="d-none d-md-block">Pricing</div>
+            <div class="d-none d-md-block">Drop Down</div>
+            <div class="d-none d-md-block">Contact</div>
+            <i class="mdi mdi-backburger d-md-none fs-1"></i>
           </div>
         </div>
       </div>
@@ -59,7 +61,7 @@
             <h1>About Us</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
           </div>
-          <div class="col-6 p-5 text-end">
+          <div class="col-md-6 p-5 text-end">
             <!-- TODO card image fix -->
             <div class="">
               <img class="img-fluid"
@@ -68,7 +70,7 @@
             </div>
 
           </div>
-          <div class="col-6 p-5">
+          <div class="col-md-6 p-5">
             <h1>turtles</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat libero voluptates quidem. Sunt dolores
               nemo culpa quis molestias, odit quo corporis pariatur a. Distinctio, vitae quae doloribus possimus
@@ -89,56 +91,129 @@
 
     <section class="services">
       <div class="container-fluid">
-        <div class="row ">
+        <!-- NOTE tied to other note anchor about padding from this row -->
+        <div class="row">
           <div class="col-12 text-center pt-5 pb-3">
             <h1>Services</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
           </div>
-          <div class="col-6 d-flex  flex-column justify-content-between pb-5">
-            <div class=" text-card d-flex justify-content-end">
+          <div class="col-md-6 order-2 order-md-1 d-flex  flex-column justify-content-around p-5 pb-5">
+            <div class=" text-card d-flex justify-content-end gap-3">
               <i class="mdi mdi-turtle fs-1 text-success"></i>
               <div class="">
-                <h4>trutle</h4>
+                <h4>turtle</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus numquam dignissimos ipsa iure id?
                 </p>
               </div>
             </div>
-            <div class=" text-card d-flex justify-content-end">
+            <div class=" text-card d-flex justify-content-end gap-3">
               <i class="mdi mdi-turtle fs-1 text-success"></i>
               <div class="">
-                <h4>trutle</h4>
+                <h4>turtle</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus numquam dignissimos ipsa iure id?
                 </p>
               </div>
             </div>
-            <div class=" text-card d-flex justify-content-end">
+            <div class=" text-card d-flex justify-content-end gap-3">
               <i class="mdi mdi-turtle fs-1 text-success"></i>
               <div class="">
-                <h4>trutle</h4>
+                <h4>turtle</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus numquam dignissimos ipsa iure id?
                 </p>
               </div>
             </div>
-            <div class=" text-card d-flex justify-content-end">
+            <div class=" text-card d-flex justify-content-end gap-3">
               <i class="mdi mdi-turtle fs-1 text-success"></i>
               <div class="">
-                <h4>trutle</h4>
+                <h4>turtle</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus numquam dignissimos ipsa iure id?
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-6 pb-5"><img class="img-fluid"
+          <div class="col-md-6 order-1 order-md-2 p-5 pb-5">
+            <img class="img-fluid"
               src="https://images.unsplash.com/photo-1581242163695-19d0acfd486f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-              alt="turt"></div>
-          <div class="col-6 text-end p-5"><img class="img-fluid"
+              alt="turtle">
+          </div>
+          <div class="col-md-6 order-3 order-md-3 text-end p-5">
+            <img class="img-fluid"
               src="https://images.unsplash.com/photo-1581242163695-19d0acfd486f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-              alt="turt"></div>
-          <div class="col-6"></div>
-          <div class="col-6"></div>
-          <div class="col-6 p-5"><img class="img-fluid"
+              alt="turt">
+          </div>
+          <div class="col-md-6 order-4 order-md-4 p-5 d-flex flex-column justify-content-around">
+            <div class="hover-card">
+              <h4>Lorem, ipsum dolor.</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, aut.</p>
+            </div>
+            <div class="hover-card">
+              <h4>Lorem, ipsum dolor.</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, aut.</p>
+            </div>
+            <div class="hover-card">
+              <h4>Lorem, ipsum dolor.</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, aut.</p>
+            </div>
+            <div class="hover-card">
+              <h4>Lorem, ipsum dolor.</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, aut.</p>
+            </div>
+          </div>
+          <div class="col-md-6 order-6 order-md-5 p-5 d-flex flex-column justify-content-center gap-1 bg-light-gray">
+            <h2>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit. Reprehenderit!</strong></h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, numquam consequatur minima omnis
+              voluptates nam recusandae unde similique eaque magni aperiam cum.</p>
+            <div>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex gap-3 align-items-center">
+                  <h4>01</h4>
+                  <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa maxime temporibus nam?</h6>
+                </div>
+                <div>
+                  <i class="mdi mdi-menu-down-outline d-none"></i>
+                  <i class="mdi mdi-menu-up-outline"></i>
+                </div>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio dolor officiis quod
+                corporis, eaque ipsum provident? Provident eligendi consequuntur possimus, vero ex quos ea.</p>
+            </div>
+            <div>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex gap-3 align-items-center">
+                  <h4>02</h4>
+                  <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa maxime temporibus nam?</h6>
+                </div>
+                <div>
+                  <i class="mdi mdi-menu-down-outline"></i>
+                  <i class="mdi mdi-menu-up-outline d-none"></i>
+                </div>
+              </div>
+              <p class="d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio dolor
+                officiis quod corporis, eaque ipsum provident? Provident eligendi consequuntur possimus, vero ex quos
+                ea.</p>
+            </div>
+            <div>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex gap-3 align-items-center">
+                  <h4>03</h4>
+                  <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa maxime temporibus nam?</h6>
+                </div>
+                <div>
+                  <i class="mdi mdi-menu-down-outline"></i>
+                  <i class="mdi mdi-menu-up-outline d-none"></i>
+                </div>
+              </div>
+              <p class="d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio dolor
+                officiis quod corporis, eaque ipsum provident? Provident eligendi consequuntur possimus, vero ex quos
+                ea.</p>
+            </div>
+          </div>
+          <!-- NOTE Unable to remove padding inherited by row -->
+          <div class="col-md-6 order-5 order-md-6 bg-light-gray">
+            <img class="img-fluid img-flush"
               src="https://images.unsplash.com/photo-1581242163695-19d0acfd486f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-              alt="turt"></div>
+              alt="turt">
+          </div>
         </div>
       </div>
     </section>
@@ -146,9 +221,26 @@
 
     <section class="review">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-
+        <div class="row bg-dark text-light p-5">
+          <div class="col-12 d-flex flex-column justify-content-center align-items-center gap-3">
+            <i class="mdi mdi-comment-quote-outline font-large"></i>
+            <p>
+              <en>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, asperiores dicta veniam soluta
+                repudiandae doloribus dolorum! Dolorum aliquam reprehenderit soluta non totam consequuntur molestiae
+                incidunt.</en>
+            </p>
+            <div class="">
+              <img src="https://thiscatdoesnotexist.com/" alt="" class="img-fluid img-circle">
+            </div>
+            <h3>Donatello</h3>
+            <p>Ninja Turtle</p>
+            <div class="d-flex gap-2">
+              <div class="circle-small"></div>
+              <div class="circle-small"></div>
+              <div class="circle-small"></div>
+              <div class="circle-small circle-small-selected"></div>
+              <div class="circle-small"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -157,20 +249,110 @@
 
     <section class="pricing">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-12"></div>
-          <div class="col-3"></div>
-          <div class="col-3"></div>
-          <div class="col-3"></div>
+        <div class="row p-xl-5 p-3 justify-content-center gap-4 bg-light-gray">
+          <div class="col-12 text-center pt-5 pb-3">
+            <h1>Pricing</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+          <div
+            class="col-sm-8 col-md-5 col-xl-3 rounded bg-white p-5 d-flex flex-column justify-content-center align-items-center">
+            <h5>Free</h5>
+            <div class="d-flex gap-1 align-items-center justify-content-center">
+              <h1>$0</h1>
+              <p class="align-self-end">/ month</p>
+            </div>
+            <p class="text-dark">Lorem, ipsum.</p>
+            <p class="text-dark">Lorem, ipsum dolor.</p>
+            <p class="text-dark">Lorem ipsum dolor sit.</p>
+            <p><s>Lorem, ipsum.</s></p>
+            <p><s>Lorem, ipsum dolor.</s></p>
+            <button class="btn btn-success">Buy Now</button>
+          </div>
+          <div
+            class="col-sm-8 col-md-5 col-xl-3 rounded bg-white p-5 d-flex flex-column justify-content-center align-items-center recommended-card">
+            <div class="recommended-bubble px-2">
+              <p class="mb-0 text-danger">Recommended</p>
+            </div>
+            <h5>Business</h5>
+            <div class="d-flex gap-1 align-items-center justify-content-center">
+              <h1>$19</h1>
+              <p class="align-self-end">/ month</p>
+            </div>
+            <p class="text-dark">Lorem, ipsum.</p>
+            <p class="text-dark">Lorem, ipsum dolor.</p>
+            <p class="text-dark">Lorem ipsum dolor sit.</p>
+            <p class="text-dark">Lorem, ipsum.</p>
+            <p><s>Lorem, ipsum dolor.</s></p>
+            <button class="btn btn-success">Buy Now</button>
+          </div>
+          <div
+            class="col-sm-8 col-md-5 col-xl-3 rounded bg-white p-5 d-flex flex-column justify-content-center align-items-center">
+            <h5>Developer</h5>
+            <div class="d-flex gap-1 align-items-center justify-content-center">
+              <h1>$29</h1>
+              <p class="align-self-end">/ month</p>
+            </div>
+            <p class="text-dark">Lorem, ipsum.</p>
+            <p class="text-dark">Lorem, ipsum dolor.</p>
+            <p class="text-dark">Lorem ipsum dolor sit.</p>
+            <p class="text-dark">Lorem, ipsum.</p>
+            <p class="text-dark">Lorem, ipsum dolor.</p>
+            <button class="btn btn-success">Buy Now</button>
+          </div>
         </div>
       </div>
     </section>
+
     <section class="contact">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-12"></div>
-          <div class="col-3"></div>
-          <div class="col-9"></div>
+        <div class="row p-5">
+          <div class="col-12 text-center pt-5 pb-3">
+            <h1>Contact</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+          <div class="col-3 d-flex flex-column justify-content-center">
+            <div class="d-flex gap-3">
+              <i class="mdi mdi-map-marker-outline fs-2"></i>
+              <div>
+                <h3>Location:</h3>
+                <p>123 Sesame Street</p>
+                <p>New York, NY 535022</p>
+              </div>
+            </div>
+            <div class="d-flex gap-3">
+              <i class="mdi mdi-email-outline fs-2"></i>
+              <div>
+                <h3>Email:</h3>
+                <p>turtle@gmail.com</p>
+              </div>
+            </div>
+            <div class="d-flex gap-3">
+              <i class="mdi mdi-cellphone fs-2"></i>
+              <div>
+                <h3>Call:</h3>
+                <p>(555) 555-5555</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-9">
+            <form class="row g-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Your name">
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="Your email">
+              </div>
+              <div class="col-12">
+                <input type="text" class="form-control" placeholder="Subject">
+              </div>
+              <div class="col-12">
+                <input type="text" class="form-control" placeholder="Message">
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-success">Send Message</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
 
@@ -183,21 +365,33 @@
   <footer>
     <section class="end">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <i></i>
-            <h1></h1>
-            <p></p>
-            <div class="email-form">
-              <form action=""></form>
-              <button>click me</button>
+        <div class="row bg-dark">
+          <div class="col-12 d-flex flex-column justify-content-center align-items-center p-5 gap-3">
+            <i class="mdi mdi-tortoise font-large text-light"></i>
+            <h1 class="mt-n3 text-light display-smaller display-md-medium">Are You Turtle Enough...</h1>
+            <p class="text-light">For The Turtle Club?</p>
+            <!-- NOTE How to widen form box length? -->
+            <div class="email-form d-flex">
+              <input type="email" class="form-control form-subscribe" name="" id="" aria-describedby="emailHelpId"
+                placeholder="Enter your Email">
+              <button class="bg-success btn btn-subscribe text-light">Subscribe</button>
             </div>
-            <div class="icons">
-              <i class="mdi mdi-twitter"></i>
-              <i class="mdi mdi-facebook"></i>
-              <i class="mdi mdi-instagram"></i>
-              <i class="mdi mdi-skype"></i>
-              <i class="mdi mdi-linkedin"></i>
+            <div class="icons d-flex gap-2">
+              <div class="circle bg-success text-light">
+                <i class="mdi mdi-twitter fs-6"></i>
+              </div>
+              <div class="circle bg-success text-light">
+                <i class="mdi mdi-facebook fs-6"></i>
+              </div>
+              <div class="circle bg-success text-light">
+                <i class="mdi mdi-instagram fs-6"></i>
+              </div>
+              <div class="circle bg-success text-light">
+                <i class="mdi mdi-skype fs-6"></i>
+              </div>
+              <div class="circle bg-success text-light">
+                <i class="mdi mdi-linkedin fs-6"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -205,20 +399,6 @@
       </div>
     </section>
   </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 
 </html>

@@ -1,3 +1,14 @@
+:root {
+  --light-gray: #aaa9a9;
+  --light-gray-bg: #dadada;
+  --dark-gray: #555555;
+  --gray-transparent: rgba(218, 218, 218, 0.25);
+  --circle-small-radius: 1rem;
+  --circle-small-selected: rgba(199, 228, 97, 0.5);
+  --recommended-transparent: rgba(218, 218, 218, 0.5);
+  --success-green: #008955;
+}
+
 body.debug .container,
 body.debug .container-fluid {
   outline: 2px double blue;
@@ -13,6 +24,14 @@ body.debug .row {
 body.debug [class*="col-"] {
   outline: 2px dotted forestgreen;
   outline-offset: -3px;
+}
+
+p {
+  color: var(--light-gray);
+}
+
+.bg-light-gray {
+  background-color: var(--light-gray-bg);
 }
 
 .box-shadow {
@@ -34,4 +53,80 @@ body.debug [class*="col-"] {
 img {
   max-height: 45vh;
   box-shadow: 1px 2px 5px 5px rgb(187, 185, 185);
+}
+
+.img-flush {
+  box-shadow: none;
+  object-fit: cover;
+  object-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.img-circle {
+  border-radius: 50%;
+  box-shadow: none;
+  max-height: 12vh;
+  border: 0.5rem solid var(--dark-gray);
+}
+
+.hover-card:hover {
+  box-shadow: 1px 2px 5px 5px rgb(187, 185, 185);;
+}
+
+.circle {
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.circle-small {
+  background-color: var(--gray-transparent);
+  height: var(--circle-small-radius);
+  width: var(--circle-small-radius);
+  border-radius: 50%;
+  height: auto;
+}
+
+.circle-small-selected {
+  background-color: var(--circle-small-selected)
+}
+
+.btn-subscribe {
+  border-radius: 100px 100px 100px 100px;
+}
+
+.form-subscribe {
+  border-radius: 100px 0 0 100px;
+  margin-right: -1rem;
+}
+
+.recommended-card {
+  position: relative;
+  border: 1px solid var(--success-green);
+}
+
+.recommended-bubble {
+  border-radius: 100px 100px 100px 100px;
+  background-color: var(--recommended-transparent);
+  position: absolute;
+  top: 1%;
+  right: center;
+}
+
+.order-6 {
+  order: 6;
+}
+
+.display-smaller {
+  font-size: larger;
+}
+
+@media screen and (min-width: 768px) {
+  .display-md-medium {
+    font-size: 32pt;
+  }
+
+  .order-md-6 {
+    order: 6;
+  }
 }
