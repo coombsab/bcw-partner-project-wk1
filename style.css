@@ -3,7 +3,7 @@
   --light-gray-bg: #dadada;
   --dark-gray: #555555;
   --gray-transparent: rgba(218, 218, 218, 0.25);
-  --circle-small-radius: 1rem;
+  --circle-small-radius: 1.25rem;
   --circle-small-selected: rgba(199, 228, 97, 0.5);
   --recommended-transparent: rgba(218, 218, 218, 0.5);
   --success-green: #008955;
